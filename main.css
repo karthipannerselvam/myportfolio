@@ -1,76 +1,188 @@
-*{
+* {
     font-family: 'Poppins', sans-serif;
     margin: 0%;
     padding: 0%;
     text-decoration: none;
 }
 
-.head{
+.head {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
 }
-.navlist{
+
+.navlist {
     display: flex;
     flex-direction: column;
-
 }
-.navlist a{
+
+.navlist a {
     list-style: none;
     color: #9E9781;
     margin-bottom: 10px;
     font-size: 16px;
     font-weight: 500;
 }
-.h-img1{
+
+.h-img1 {
     width: 80px;
 }
-.s1{
+
+.s1 {
     background-color: black;
 }
-.intro{
+
+.intro {
     display: flex;
     justify-content: center;
 }
-.h1{
+
+.h1 {
     font-family: 'Allerta Stencil';
     font-size: 150px;
     width: 80%;
     color: rgb(95, 95, 95);
 }
-.rect{
+
+.rect {
     border: 2px;
-    width: 200px; 
+    width: 200px;
     position: relative;
-    left: 75%; 
+    left: 75%;
     top: -300px;
-    
 }
-.hero{
+
+.hero {
     position: sticky;
     top: 0;
 }
 
-.card2{
+.card2 {
     width: 100%;
-    height: 100vh; 
+    height: 150vh;
     background-color: #5A4C4C;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: sticky;
     top: 0;
     border-radius: 50px;
+    margin-bottom: 100px;
 }
-section{
-    position: sticky;
-    top: 0;
+
+section {
+
+    position: sticky; 
+    top: 0%;
 }
-.hidden{
+
+.hidden {
     opacity: 0;
     transition: all 1s;
 }
-.show{
+
+.show {
     opacity: 1;
+}
+
+.about {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    /* margin-top: 20px; */
+    margin-left: 20px;
+}
+
+.me-img {
+    width: 450px;
+    height: 450px;
+    position: relative;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.con {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.con p {
+    font-size: 25px;
+    font-weight: 500;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.mm-img {
+    width: 550px;
+    height: 550px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.sec2{
+    background-color: #000000;
+}
+
+.sec3 {
+    /* margin-top: 100px; */
+    background-color: #000000;
+    padding: 50px; 
+    color: white;
+}
+
+.con1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.con1-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq{
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+    padding-bottom: 1rem;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.question h3{
+    font-size: 1.8rem;
+}
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+.answer p{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+}
+.faq.active .answer{
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+.faq.active svg{
+    transform: rotate(180deg);
+}
+svg{
+    transition: transform 0.5s ease-in;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }

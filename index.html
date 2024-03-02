@@ -11,10 +11,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
 </head>
 <body>
-    <section class="s1 ">
+    <section class="s1 " id="s1">
         <div class="card">
             <div class="hero ">
                 <div class="head">
@@ -24,18 +28,22 @@
                     <div class="navlist">
                         <a href="#about">About</a>
                         <a href="#about">Projects</a>
-                        <a href="#about">Skills</a>
+                        <a href="#skill">Skills</a>
                         <a href="#about">Contact</a>
                     </div>
                 </div>
                 <div class="intro">
-                    <div class="h1">Hi there, I'm Karthi</div>
+                    <!-- <div class="h1">Hi there, I'm Karthi</div> -->
+                    <div class="h1">Hi there, I am Karthi </div>
+            
+                    <div class="dytext"><span id="dynamicText"></span></div>
                 </div>
-                <div class="rect">
+                <!-- <div class="rect">
                     <img class="img2" src="img/Group 1.png" alt="">
-                </div>
+                </div> -->
             </div>
         </div>
+        
     </section>
 
     <section class="sec2">
@@ -49,33 +57,64 @@
                 </div>
                 <div class="cir"> 
                 </div>
-                <p>Empowering all-scale startups with custom web experiences that are memorable and drive success. With a passion for design and development, I take projects from ideation to launch, ensuring a seamless journey that leaves a lasting impact in the digital landscape.</p>
+                <p>I am Karthi, currently pursuing my Bachelor's in Computer Science Engineering, with a passion for web development and UI/UX design. My journey in the realm of technology has been fueled by a desire to create seamless digital experiences and innovative solutions.</p>
             </div>
-        </div>
-    </section>
+            <div class="con1" id="con1">     
+                <div class="con1-1">
+                    <div class="con1-1-1">  
+                        <div class="con-1-2">What I Can Do</div>
+                        <div><img class="sparkle" src="img/sparkle (1).png" alt="icon"></div>
+                    </div>
+                    <div class="con1-1-2">My obsession is to deliver a digital experience that not only serves a great purpose, but give your business an unfair advantage.</div>           
+                </div>
+                    <div class="container">
+                        <ul class="accordion-menu">
+                            <li class="link">
+                                <div class="dropdown">Web development
+                                    <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                                </div>
+                                <p class="submenuItems">I create unique, custom-coded websites that are tailored to your brand. I focus on scalability, performance, accessibility, and engaging animations for a memorable experience. </p>
+                            </li>
+                            <li class="link">
+                                <div class="dropdown">web design
+                                    <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                                </div>
+                                <p class="submenuItems">I design user-centric websites that enhance your brand and drive business goals. Clean typography and minimal layouts has my full attention to create a compelling online presence.</p>
 
-    <section class="sec3">
-        <div class="con1">
-            <div class="con1-1">
-                <div class="con1-1-1">
-                    WHAT I CAN DO
-                </div>
-                <div class="con1-1-2">My obsession is to deliver a digital experience that not only serves a great purpose, but give your business an unfair advantage.</div>           
-            </div>
-            <div class="con1-2">
-                <div class="faq">
-                    <div class="question">
-                        <h3>Wev development</h3>
-                        <svg width="15" height="10" viewBox="0 0 42 45">
-                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round/"></path>
-                        </svg> 
-                    </div>
-                    <div class="answer hidden">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus culpa sunt veniam mollitia inventore. Eaque blanditiis possimus rerum quod ipsam ad illum magni impedit cum!</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
+                <div class="skill" id="skill">
+                    <div class="box1">
+                        <div><img class="skillicons" src="img/html.png" alt=""></div>
+                    </div>
+                    <div class="box1">
+                        <div><img class="skillicons" src="img/css.png" alt=""></div>
+                    </div>
+                    <div class="box1">
+                        <div><img class="skillicons" src="img/figma.png" alt=""></div>
+                    </div>
+                    <div class="box1">
+                        <div><img class="skillicons" src="img/django.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="projects">
+                    <div class="projectHead">Projects</div>
+                    <div class="pro-card">
+                        <div class="p-card1">
+                            <div><img class="p1" src="img/1.png" alt=""></div>
+                        </div>
+                        <div class="p-card1">
+                            <div><img class="p1" src="img/p3.png" alt=""></div>
+                        </div>
+                        <div class="p-card1">
+                            <div><img class="p1" src="img/p2.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
         </div>
     </section>
+    <script src="main.js"></script>
 </body>
 </html>

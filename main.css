@@ -75,8 +75,7 @@
     height: 150vh;
     background-color: #153D42;
     position: relative;
-    top: 0;
-    
+    top: 0;  
     border-radius: 50px;
     margin-bottom: 100px;
 }
@@ -102,13 +101,14 @@ section {
     font-size: 80px;
     /* margin-top: 20px; */
     margin-left: 20px;
+    padding: 20px;
 }
 
 .me-img {
     width: 450px;
     height: 450px;
     position: relative;
-    /* border-radius: 50%; */
+     border-radius: 50%; 
     z-index: 1000;
 }
 
@@ -123,6 +123,7 @@ section {
     font-weight: 500;
     width: 80%;
     margin-top: 20px;
+    padding: 50px;
 }
 
 .mm-img {
@@ -132,7 +133,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
+    border-radius: 50%;
     /* border-radius: 50%; */
 }
 .sec2{
@@ -259,6 +260,7 @@ section {
     height: 100px;
     width: 100px;
     /* margin-left: 10px; */
+    cursor: pointer;
     margin: 8px;
     border-radius: 8px;
     background-color: #ffffff00;
@@ -275,7 +277,7 @@ section {
     align-items: center;
     flex-direction: column;
     background-color: #000000;
-    height: 80vh;
+    height: 85vh;
 }
 .projectHead{
     font-size: 60px;
@@ -289,14 +291,110 @@ section {
 .p-card1{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 400px;
+    height: 430px;
     width: 350px;
     margin: 20px;
     border-radius: 10px;
-    background-image: linear-gradient(45deg,#153D42,rgb(63, 63, 62));
+    padding: 2px;
+    cursor: pointer;
+}
+.p-card1:hover{
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(34, 65, 72));
 }
 .p1{
     height: 180px;
     width: 300px;
+    border-radius: 5px;
+}
+.pp2{
+    font-size: 15px;
+    font-weight: 200;
+    padding: 8px;
+    color: #999;
+}
+.pp1{
+    font-size: 25px;
+    font-weight: 400;
+    padding: 5px;
+    color: rgb(157, 223, 238);
+}
+.card-content{
+    background-color: #000000;
+    border-radius: inherit;
+    display: flex;
+    height: 428px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact{
+    background-color: #000000;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    padding-left: 150px;
+}
+.contactHead{
+    font-size: 60px;
+    font-family: 'League Spartan';
+    padding: 20px;
+    border-bottom: 4px solid #153D42;
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactMail{
+    padding: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border: none;
+    width: 500px;
+    border: 2px solid #999;
+    border-radius: 8px;
+
+}
+.lable{
+    margin-bottom: 8px;
+}
+.input{
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    width: 400px;
+    font-size: 16px;
+    padding: 10px;
+    border-bottom: 2px solid #ffffff;
+}
+.chatContent{
+    font-size: 40px;
+    width: 80%;
+}
+.free{
+    color: #84c2ca;
+}
+.contactDetails{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.btn{
+    width: 179PX;
+    height: 49px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22.32px;
+    background-color: transparent;
+    border-color: #2EE4BC;
 }

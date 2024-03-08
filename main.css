@@ -288,7 +288,7 @@ section {
     align-items: center;
     flex-direction: column;
     background-color: #000000;
-    height: 85vh;
+    height: 100%;
 }
 .projectHead{
     font-size: 60px;
@@ -298,6 +298,7 @@ section {
 .pro-card{
     display: flex;
     margin-top: 100px;
+    overflow-y: auto 
 }
 .p-card1{
     display: flex;
@@ -310,6 +311,7 @@ section {
     border-radius: 10px;
     padding: 2px;
     cursor: pointer;
+    
 }
 .p-card1:hover{
     background: linear-gradient(45deg, rgb(0, 0, 0), rgb(34, 65, 72));
@@ -479,20 +481,25 @@ form{
     .pro-card{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        
     }
     .contact{
         height: 100%;
     }
     .projects{
         height: 100%;
+       
     }
+
     .contact{
         display: flex;
         flex-direction: column;
-        padding: 5dvh;
+        padding: 5dvh;   
     }
     .contactHead{
        display: flex;
+       
        justify-content: space-between;
     }
     .contactHead .sparkle{
@@ -501,4 +508,9 @@ form{
     .chatContent{
         padding: 30px;
     }
+    form{
+        width: 100%;
+        height: 100%;
+    }
+   
 }

@@ -77,4 +77,25 @@ const hiddenElements = document.querySelectorAll('.hero');
 hiddenElements.forEach((el) => observer.observe(el));
 
 
+function SendMail(e) {
+    e.preventDefault();
+
+    var params ={
+        from_name: document.getElementById("fullName").value,
+        email_id: document.getElementById("email_id").value,
+        ph_no: document.getElementById("ph_no").value,
+        message: document.getElementById("message").value,
+    }
+
+    emailjs.send("service_zq8tz7b", "template_h7vklra", params)
+        .then(function(res) {
+            alert("Success! " + res.status);
+        })
+        .catch(function(error) {
+            console.error("Error: ", error);
+            alert("Error sending email. Please try again later.");
+        });
+}
+
+
 

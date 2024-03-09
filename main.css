@@ -207,6 +207,11 @@ section {
     justify-content: space-between;
     align-items: center;
 }
+.ic{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .dropdown{
     cursor: pointer;
     display: block;
@@ -437,7 +442,6 @@ form{
     .head {
         padding: 50px; 
         overflow: hidden;
-
     }
     .hero{
         height: 50vh;
@@ -531,3 +535,94 @@ form{
     }
    
 }
+@media only screen and (min-width: 380px) {
+    .head {
+        padding: 20px;
+    }
+    .hero {
+        height: 15vh;
+    }
+    .dytext {
+        font-size: 20px;
+    }
+    .h1 {
+        font-size: 40px;
+    }
+    .about{
+        font-size: 50px;
+    }
+    .mm-img{
+        width: 300px;
+        height: 300px;
+    }
+    .me-img{
+        width: 250px;
+        height: 250px;
+    }
+    .con p {
+        font-size: 16px;
+    }
+    .con-1-2{
+        margin-left: -30px;
+        font-size: 35px;
+        line-height: 3;
+    }
+    .con1-1-1 .sparkle{
+        height: 35px;
+        width: 35px;
+    }
+    .con1-1-2{
+        font-size: 20px;
+        margin-left:-30px;
+    }
+    .container {
+        width: 90%;
+    }
+    .dropdown {
+        font-size: 30px;
+    }
+    .submenuItems {
+        font-size: 14px;
+    }
+    .skill{
+        padding: 30px;
+    }
+    .projects {
+        height: auto; /* Adjust height as needed */
+        margin-top: 150px;
+    }
+    .pro-card {
+        margin-top: 20px;
+        height: auto; /* Adjust height as needed */
+    }
+    .p-card1 {
+        height: auto; /* Adjust height as needed */
+        width: 90%;
+        margin: 10px;
+    }
+    .p-card1:hover {
+        background: none;
+    }
+    .contact {
+        padding: 20px;
+        overflow: hidden;
+    }
+    .contactHead {
+        font-size: 40px;
+    }
+    .contactHead .sparkle {
+        margin-left: 55px;
+        height: 35px;
+        width: 35px;
+    }
+    .chatContent {
+        font-size: 20px;
+    }
+    form {
+        /* width: 100%; */
+        height: auto;
+        overflow: hidden;
+        width: 250px;
+    }
+}
+

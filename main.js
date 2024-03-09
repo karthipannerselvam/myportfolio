@@ -97,5 +97,17 @@ function SendMail(e) {
         });
 }
 
+const observer1 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('vis');
+        } else {
+            entry.target.classList.remove('vis');
+        }
+    });
+}, { threshold: 0.5 }); // Adjust the threshold as needed
+
+const animatedElements = document.querySelectorAll('.pro-card');
+animatedElements.forEach((el) => observer1.observe(el));
 
 

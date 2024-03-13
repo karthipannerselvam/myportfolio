@@ -366,6 +366,7 @@ section {
     padding-left: 150px;
     /* overflow: hidden; */
     height: 100%;
+    width: 90%;
     position: absolute;
    
 }
@@ -390,7 +391,7 @@ form{
     flex-direction: column;
     padding: 50px;
     border: none;
-    width: 500px;
+    width: 80%;
     border: 2px solid #999;
     border-radius: 8px;
 
@@ -535,7 +536,7 @@ form{
     }
    
 }
-@media only screen and (min-width: 380px) {
+@media (max-width: 480px) {
     .head {
         padding: 20px;
     }
@@ -604,8 +605,9 @@ form{
         background: none;
     }
     .contact {
-        padding: 20px;
-        overflow: hidden;
+        padding: 10px;
+        width: 100vw;
+        height: 50%;
     }
     .contactHead {
         font-size: 40px;
@@ -615,14 +617,18 @@ form{
         height: 35px;
         width: 35px;
     }
+    .contactDetails{
+        height: auto;
+    }
     .chatContent {
         font-size: 20px;
+        padding-top: 0px !important;
     }
     form {
         /* width: 100%; */
         height: auto;
         overflow: hidden;
-        width: 250px;
+        width: 70%;
     }
 }
 

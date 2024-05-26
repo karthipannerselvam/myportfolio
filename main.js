@@ -1,5 +1,5 @@
 const dynamicText = document.getElementById('dynamicText');
-const words = [ 'a Web developer', 'a designer', 'a Django developer'];
+const words = [ 'a Data Analyst', 'a Data Engineer', 'a Designer'];
 let wordIndex = 0;
 let charIndex = 0;
 
